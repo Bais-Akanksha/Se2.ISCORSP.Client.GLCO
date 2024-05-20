@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DataServicesLetter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Policies">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Policy">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="REC_TYPE" type="xs:string" />
+                    <xs:element name="POL_CONT" type="xs:string" />
+                    <xs:element name="POL_PLAN_CODE" type="xs:string" />
+                    <xs:element name="POL_PRODUCT" type="xs:string" />
+                    <xs:element name="POL_QUAL_DESC" type="xs:string" />
+                    <xs:element name="POL_COMP_NAME" type="xs:string" />
+                    <xs:element name="POL_CYCLE_DATE" type="xs:date" />
+                    <xs:element name="POL_SERVICE_NAME" type="xs:string" />
+                    <xs:element name="POL_SERVICE_DESC" type="xs:string" />
+                    <xs:element name="POL_SOURCE" type="xs:string" />
+                    <xs:element name="POL_STATUS" type="xs:string" />
+                    <xs:element name="POL_POL_NUM" type="xs:string" />
+                    <xs:element name="POL_PRDCT_COMP" type="xs:string" />
+                    <xs:element name="POL_LOB" type="xs:string" />
+                    <xs:element name="POL_PRCSG_COMP" type="xs:string" />
+                    <xs:element name="POL_TRACKING_ID" type="xs:string" />
+                    <xs:element name="POL_MATURITY_DATE" type="xs:date" />
+                    <xs:element name="POL_PRDCT_MKTG_NAME" type="xs:string" />
+                    <xs:element name="POL_ISSUE_DATE" type="xs:date" />
+                    <xs:element name="POL_DOC_TYPE" type="xs:string" />
+                    <xs:element name="POL_SYS_CODE" type="xs:string" />
+                    <xs:element name="Roles">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Role">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ROL_CONT" type="xs:string" />
+                                <xs:element name="ROL_CODE" type="xs:string" />
+                                <xs:element name="ROL_PCT" type="xs:decimal" />
+                                <xs:element name="ROL_FULL_NAME" type="xs:string" />
+                                <xs:element name="ROL_PREFIX" type="xs:string" />
+                                <xs:element name="ROL_FST_NAME" type="xs:string" />
+                                <xs:element name="ROL_MI" type="xs:string" />
+                                <xs:element name="ROL_LST_NAME" type="xs:string" />
+                                <xs:element name="ROL_SUFFIX" type="xs:string" />
+                                <xs:element name="ROL_NAME_TYPE" type="xs:string" />
+                                <xs:element name="ADDR_LINE1" type="xs:string" />
+                                <xs:element name="ADDR_LINE2" type="xs:string" />
+                                <xs:element name="ADDR_LINE3" type="xs:string" />
+                                <xs:element name="ADDR_CITY" type="xs:string" />
+                                <xs:element name="ADDR_STATE" type="xs:string" />
+                                <xs:element name="ADDR_ZIP" type="xs:string" />
+                                <xs:element name="ADDR_TYPE" type="xs:string" />
+                                <xs:element name="ROL_EMAIL" type="xs:string" />
+                                <xs:element name="ROL_PHONE_NUM" type="xs:string" />
+                                <xs:element name="ROL_PHONE_TYPE" type="xs:string" />
+                                <xs:element name="ROL_EXTERNAL_ID" type="xs:string" />
+                                <xs:element name="ROL_MASTER_NUM" type="xs:string" />
+                                <xs:element name="ROL_TAX_ID" type="xs:string" />
+                                <xs:element name="ROL_DELIVERY_FLAG" type="xs:string" />
+                                <xs:element name="ROL_DELIVERY_DESC" type="xs:string" />
+                                <xs:element name="ROL_ROLE_ID" type="xs:byte" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CarrierInformation">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Carrier">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="CARRIER_CONT" type="xs:string" />
+                                <xs:element name="CARRIER_CARRIER_NAME" type="xs:string" />
+                                <xs:element name="CARRIER_ADDR_LINE1" type="xs:string" />
+                                <xs:element name="CARRIER_ADDR_LINE2" type="xs:string" />
+                                <xs:element name="CARRIER_ADDR_LINE3" type="xs:string" />
+                                <xs:element name="CARRIER_CITY" type="xs:string" />
+                                <xs:element name="CARRIER_STATE" type="xs:string" />
+                                <xs:element name="CARRIER_ZIP" type="xs:string" />
+                                <xs:element name="CARRIER_WEB_ADDR" type="xs:string" />
+                                <xs:element name="CARRIER_PHONE_NUM" type="xs:string" />
+                                <xs:element name="CARRIER_FAX_NUM" type="xs:string" />
+                                <xs:element name="CARRIER_OFFICE_HOURS" type="xs:string" />
+                                <xs:element name="CARRIER_OFFICE_DAYS" type="xs:string" />
+                                <xs:element name="CARRIER_BUDGET_CNTR" type="xs:string" />
+                                <xs:element name="CARRIER_POB_ADDR_LINE1" type="xs:string" />
+                                <xs:element name="CARRIER_POB_ADDR_LINE2" type="xs:string" />
+                                <xs:element name="CARRIER_POB_ADDR_LINE3" type="xs:string" />
+                                <xs:element name="CARRIER_POB_CITY" type="xs:string" />
+                                <xs:element name="CARRIER_POB_STATE" type="xs:string" />
+                                <xs:element name="CARRIER_POB_ZIP" type="xs:string" />
+                                <xs:element name="CARRIER_MAIL_ADDR_LINE1" type="xs:string" />
+                                <xs:element name="CARRIER_MAIL_ADDR_LINE2" type="xs:string" />
+                                <xs:element name="CARRIER_MAIL_ADDR_LINE3" type="xs:string" />
+                                <xs:element name="CARRIER_MAIL_CITY" type="xs:string" />
+                                <xs:element name="CARRIER_MAIL_STATE" type="xs:string" />
+                                <xs:element name="CARRIER_MAIL_ZIP" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Features">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" minOccurs="0" name="Feature">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FEA_CONT" type="xs:string" />
+                                <xs:element name="FEA_FEAT_DESC" type="xs:string" />
+                                <xs:element name="FEA_FEAT_SPEC_CODE" type="xs:string" />
+                                <xs:element name="FEA_FEAT_SPEC_ID" type="xs:string" />
+                                <xs:element name="FEA_FEAT_VARIATION_GROUP_ID" type="xs:string" />
+                                <xs:element name="FEA_RIDER_ELECTED_IND" type="xs:string" />
+                                <xs:element name="FEA_LEVEL_AMT" type="xs:decimal" />
+                                <xs:element name="FEA_INCREASE_AMT" type="xs:decimal" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PolValues">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PolValue">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PVAL_CONT" type="xs:string" />
+                                <xs:element name="PVAL_TXN_EFF_DATE" type="xs:date" />
+                                <xs:element name="PVAL_END_ACCUM_VAL" type="xs:decimal" />
+                                <xs:element name="PVAL_CASH_VAL" type="xs:decimal" />
+                                <xs:element name="PVAL_DEATH_BNFT_VAL" type="xs:decimal" />
+                                <xs:element name="PVAL_SURR_CHRG" type="xs:decimal" />
+                                <xs:element name="PVAL_GMWB_RATCHET_BASE" type="xs:decimal" />
+                                <xs:element name="PVAL_GWB_ANNUAL_LIMIT" type="xs:decimal" />
+                                <xs:element name="PVAL_PYTD_PREM" type="xs:decimal" />
+                                <xs:element name="PVAL_PREM_BONUS" type="xs:decimal" />
+                                <xs:element name="PVAL_PYTD_WITHD" type="xs:decimal" />
+                                <xs:element name="PVAL_PYTD_INTEREST_CREDITED" type="xs:decimal" />
+                                <xs:element name="PVAL_BEGIN_DATE" type="xs:date" />
+                                <xs:element name="PVAL_BEGIN_ACCUM_VAL" type="xs:decimal" />
+                                <xs:element name="PVAL_NEXT_ANNIV_DATE" type="xs:date" />
+                                <xs:element name="PVAL_GWB_BENEFIT_START_DATE" type="xs:date" />
+                                <xs:element name="PVAL_PYTD_INDEX_INTEREST_CREDITED" type="xs:decimal" />
+                                <xs:element name="PVAL_PYTD_FIXED_INTEREST_CREDITED" type="xs:decimal" />
+                                <xs:element name="PVAL_RIDER_CHRG" type="xs:decimal" />
+                                <xs:element name="PVAL_GLWB_PHASE_CHANGE" type="xs:string" />
+                                <xs:element name="PVAL_EARLY_DATE" type="xs:string" />
+                                <xs:element name="PVAL_PYTD_PREM_BONUS" type="xs:decimal" />
+                                <xs:element name="PVAL_BONUS_INT_AMT" type="xs:decimal" />
+                                <xs:element name="PVAL_PREM_BONUS_RECAPTURE" type="xs:decimal" />
+                                <xs:element name="PVAL_PYTD_FEES" type="xs:decimal" />
+                                <xs:element name="PVAL_LTC_RIDER_FLAG_ANNUICARE" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="FundValues">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="FundValue">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FND_CONT" type="xs:string" />
+                                <xs:element name="FND_ACC_CODE" type="xs:string" />
+                                <xs:element name="FND_DIV_CODE" type="xs:string" />
+                                <xs:element name="FND_FUND_MKTG_NAME" type="xs:string" />
+                                <xs:element name="FND_END_BAL" type="xs:decimal" />
+                                <xs:element name="FND_PART_RATE" type="xs:decimal" />
+                                <xs:element name="FND_CAP_RATE" type="xs:decimal" />
+                                <xs:element name="FND_SPREAD_RATE" type="xs:decimal" />
+                                <xs:element name="FND_INT_RATE" type="xs:decimal" />
+                                <xs:element name="FND_END_INDEX_VALUE" type="xs:decimal" />
+                                <xs:element name="FND_ORIG_DEPST_DATE" type="xs:date" />
+								<xs:element name="FND_FUND_SORT_ORDER" type="xs:string" />	
+								<xs:element name="NEXT_FND_INT_RATE" type="xs:decimal" />								
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PriorAnnvFunds">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="PriorAnnvFund">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PAF_CONT" type="xs:string" />
+                                <xs:element name="PAF_ACC_CODE" type="xs:string" />
+                                <xs:element name="PAF_DIV_CODE" type="xs:string" />
+                                <xs:element name="PAF_FUND_MKTG_NAME" type="xs:string" />
+                                <xs:element name="PAF_BEGIN_BAL" type="xs:decimal" />
+                                <xs:element name="PAF_PART_RATE" type="xs:decimal" />
+                                <xs:element name="PAF_CAP_RATE" type="xs:decimal" />
+                                <xs:element name="PAF_SPREAD_RATE" type="xs:decimal" />
+                                <xs:element name="PAF_INTEREST_RATE" type="xs:decimal" />
+                                <xs:element name="PAF_INDX_BEGIN_BAL" type="xs:decimal" />
+                                <xs:element name="PAF_INDX_GROWTH_RATE" type="xs:decimal" />
+                                <xs:element name="PAF_INDX_CREDIT_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_BOP1_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP1_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX1_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX1_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP1_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP1_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP2_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP2_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX2_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX2_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP2_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP2_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP3_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP3_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX3_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX3_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP3_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP3_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP4_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP4_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX4_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX4_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP4_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP4_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP5_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP5_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX5_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX5_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP5_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP5_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP6_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP6_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX6_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX6_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP6_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP6_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP7_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP7_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX7_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX7_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP7_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP7_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP8_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP8_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX8_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX8_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP8_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP8_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP9_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP9_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX9_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX9_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP9_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP9_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP10_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP10_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX10_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX10_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP10_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP10_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP11_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP11_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX11_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX11_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP11_DATE" type="xs:date" />
+                                <xs:element name="PAF_EOP11_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_BOP12_DATE" type="xs:date" />
+                                <xs:element name="PAF_BOP12_VAL" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX12_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_MTH_INDX12_APPLD_CHG_PERC" type="xs:decimal" />
+                                <xs:element name="PAF_EOP12_DATE" type="xs:date" />
+                                <xs:element name="PAF_ORIG_DEPST_DATE" type="xs:date" />
+								<xs:element name="PAF_FUND_SORT_ORDER" type="xs:string" />								
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="TransHst">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="TxnHst">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="TXH_CONT" type="xs:string" />
+                                <xs:element name="TXH_TXN_DATE" type="xs:date" />
+                                <xs:element name="TXH_TXN_NUM" type="xs:string" />
+                                <xs:element name="TXH_TXN_DESC" type="xs:string" />
+                                <xs:element name="TXH_TXN_TOTAL_AMT" type="xs:decimal" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="TransFndHst">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="TxnFndHst">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="TFH_CONT" type="xs:string" />
+                                      <xs:element name="TFH_TXN_NUM" type="xs:string" />
+                                      <xs:element name="TFH_ACC_CODE" type="xs:string" />
+                                      <xs:element name="TFH_DIV_CODE" type="xs:string" />
+                                      <xs:element name="TFH_FUND_MKTG_NAME" type="xs:string" />
+                                      <xs:element name="TFH_FUND_AMT" type="xs:decimal" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

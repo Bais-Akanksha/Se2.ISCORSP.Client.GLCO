@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{828F6FDA-FA7E-45F9-8008-D70557519908}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Se2.ISCORSP.Main</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Se2ISI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Se2ISI.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Se2ISI.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Se2.ISCORSP.Client.GLCO.AnnualRMDLetter">
+      <HintPath>..\AnnualRMDLetter\bin\Debug\Se2.ISCORSP.Client.GLCO.AnnualRMDLetter.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Data">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Exception">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Exception.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Logging">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Lookup">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Lookup.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Messaging">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Notification">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Notification.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Objects">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Presentation">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Processing">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Processing.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Settings">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Utility">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Se2.ISI.Base.Xlat">
+      <HintPath>..\..\..\..\References\Debug\Se2.ISI.Base.Xlat.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AddressChangeLetter\AddressChangeLetter.vbproj">
+      <Project>{e61d6c49-18a3-4924-8276-2a71e6649c85}</Project>
+      <Name>AddressChangeLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADLEndLetter\ADLEndLetter.vbproj">
+      <Project>{a0f168f1-4526-4436-8951-0277d6d1f7d7}</Project>
+      <Name>ADLEndLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADLRecertifyLetter\ADLRecertifyLetter.vbproj">
+      <Project>{c1a03f39-fc37-4888-bec8-01889b20869b}</Project>
+      <Name>ADLRecertifyLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADLStartLetter\ADLStartLetter.vbproj">
+      <Project>{f6707de5-9c52-4a29-be02-9784d28d7f20}</Project>
+      <Name>ADLStartLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AnnualRMDAgentLetter\AnnualRMDAgentLetter.vbproj">
+      <Project>{4c22e5a7-6ba4-4da5-93bb-b0f5dbccee65}</Project>
+      <Name>AnnualRMDAgentLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AnnualRMDCustomerLetter\AnnualRMDCustomerLetter.vbproj">
+      <Project>{6131dbef-14a1-441a-a6b1-bd8647993f73}</Project>
+      <Name>AnnualRMDCustomerLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankingConfirmationLetter\BankingConfirmationLetter.vbproj">
+      <Project>{4a1995af-1186-4811-a2f1-0d5857c964df}</Project>
+      <Name>BankingConfirmationLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BeneChangeLetter\BeneChangeLetter.vbproj">
+      <Project>{e1d74e0c-76c4-4431-814a-262af338da04}</Project>
+      <Name>BeneChangeLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BRCCEmailNotification\BRCCEmailNotification.vbproj">
+      <Project>{8bf3b34c-423c-414b-abc6-bee020d33577}</Project>
+      <Name>BRCCEmailNotification</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CostBasisLetter\CostBasisLetter.vbproj">
+      <Project>{53e811d4-1a56-4f0c-8e81-7dff19dc6c8d}</Project>
+      <Name>CostBasisLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Daily_RMD_Letter\DailyRMDLetter.vbproj">
+      <Project>{8b3cdb8a-e495-4941-ae0d-eb6cb76a323b}</Project>
+      <Name>DailyRMDLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DNQLetter\DNQLetter.vbproj">
+      <Project>{f96a3340-b75e-42b4-9eb7-f767d0d5cfc6}</Project>
+      <Name>DNQLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDelivery\EDelivery.vbproj">
+      <Project>{3795862a-e84c-46e7-9d26-3ddaca461307}</Project>
+      <Name>EDelivery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FIA3AnnivStmt\FIA3AnnivStmt.vbproj">
+      <Project>{e3120d40-6dd1-4d9f-ab8b-beae8ec2002e}</Project>
+      <Name>FIA3AnnivStmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FIAADL30DayLetter\FIAADL30DayLetter.vbproj">
+      <Project>{59471fbc-1c77-4fb5-8899-73d00ed0d0e4}</Project>
+      <Name>FIAADL30DayLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FIAADL60DayLetter\FIAADL60DayLetter.vbproj">
+      <Project>{da69995c-c650-40b3-91f0-693b9a26fae2}</Project>
+      <Name>FIAADL60DayLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FIAADLStartBenefitLetter\FIAADLStartBenefitLetter.vbproj">
+      <Project>{8849f21b-aa34-4688-b170-c526757dea03}</Project>
+      <Name>FIAADLStartBenefitLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FIAADLStopBenefitLetter\FIAADLStopBenefitLetter.vbproj">
+      <Project>{2d9be1fb-cea1-4531-a1c2-924d6e78e715}</Project>
+      <Name>FIAADLStopBenefitLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FIAAnnivStmt\FIAAnnivStmt.vbproj">
+      <Project>{ef51e497-42f0-4ad9-9bb9-072af72b072c}</Project>
+      <Name>FIAAnnivStmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FIAPolicyPage\FIAPolicyPage.vbproj">
+      <Project>{dda0ed2f-0917-48c0-a7f9-e2ac3ebfd520}</Project>
+      <Name>FIAPolicyPage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinancialConfirm\FinancialConfirm.vbproj">
+      <Project>{f7de944e-9012-46fb-82cc-d76c8e057d0f}</Project>
+      <Name>FinancialConfirm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FixedAnnivStmt\FixedAnnivStmt.vbproj">
+      <Project>{ef9c05ca-4125-4b24-8e38-6069d46efb78}</Project>
+      <Name>FixedAnnivStmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FMVLetter\FMVLetter.vbproj">
+      <Project>{af1822b1-52b5-42a1-83d6-c9e1d8438bda}</Project>
+      <Name>FMVLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Intake\Intake.vbproj">
+      <Project>{9f5017b1-9f63-4927-b807-f47e4fecc011}</Project>
+      <Name>Intake</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LTCAutomation\LTCAutomation.vbproj">
+      <Project>{38c07482-607d-4e9e-88b0-fc3443e225f6}</Project>
+      <Name>LTCAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MaturityDateLetter\MaturityDateLetter.vbproj">
+      <Project>{d57806f6-df2f-4992-8835-07bb9abf7e4b}</Project>
+      <Name>MaturityDateLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MYGAAnnivStmt\MYGAAnnivStmt.vbproj">
+      <Project>{da973a7d-3c5a-4bd2-b014-6a7bbe7e6c28}</Project>
+      <Name>MYGAAnnivStmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RenewalLetter\RenewalLetter.vbproj">
+      <Project>{ae65350a-2d04-4a36-832a-5c24765828ee}</Project>
+      <Name>RenewalLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReplacementLetter\ReplacementLetter.vbproj">
+      <Project>{306d0d71-0478-4713-b923-101cac3d133b}</Project>
+      <Name>ReplacementLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RiderTerminationLetter\RiderTerminationLetter.vbproj">
+      <Project>{12b92d0a-d7d1-49d9-af92-4e692a35687a}</Project>
+      <Name>RiderTerminationLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoA\SoA.vbproj">
+      <Project>{d10eebd4-8df1-4ddb-adbb-7aa570b1bedd}</Project>
+      <Name>SoA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StartRiderBenefitLetter\StartRiderBenefitLetter.vbproj">
+      <Project>{7762a7a4-bc2a-4145-9474-0bdf4e295cee}</Project>
+      <Name>StartRiderBenefitLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferLetter\TransferLetter.vbproj">
+      <Project>{ec470ede-5933-4711-a8de-22c08debb4ba}</Project>
+      <Name>TransferLetter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WaivePremiumLetter\WaivePremiumLetter.vbproj">
+      <Project>{2ae9b3ba-5622-49c6-acb6-9ca2f688a354}</Project>
+      <Name>WaivePremiumLetter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
