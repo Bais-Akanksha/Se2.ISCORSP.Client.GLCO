@@ -43,6 +43,7 @@ Namespace Se2.ISCORSP.Client.GLCO.FIA3AnnivStmt.DataSource
             Parms.Add(New SqlClient.SqlParameter("@ClientProcedure", "GLCO_FIA3AnnivStmt"))
             Parms.Add(New SqlClient.SqlParameter("@Flag", Flag))
             'Parms.Add(New SqlClient.SqlParameter("@contract", "8428000"))
+            '' added this piece of code to test git changes
         End Sub
     End Class
 
